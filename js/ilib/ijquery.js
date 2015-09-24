@@ -16,4 +16,18 @@
 	    });
 	    return obj;
     };
+    //网络请求
+    $$.i_post = function(url, params, successDo, failDo){
+    		$.ajax({
+          type: "POST",
+          url: url,
+          data: params,
+          success: function(data){
+              
+          },
+          error: function(data){
+              
+          }
+      });
+    }
 })(jQuery);
