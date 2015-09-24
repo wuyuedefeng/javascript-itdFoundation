@@ -1,0 +1,38 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<script src="js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ilib/ijquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<form action="#" id="person_info" method="get">
+			<input type="text" name="name" id="name" value="张三" />
+			<input type="number" name="age" id="age" value="18" />
+			<input type="submit" value="提交"/>
+		</form>
+	</body>
+</html>
+
+<script type="text/javascript">
+	
+	$(function(){
+		var obj = $('#person_info').i_formDataToObject();
+		console.log(obj);
+//		function getObjectWithFormIdOrClass(idOrClassStr) {
+//			var seriaArray = $(idOrClassStr).serializeArray();
+//			var paramsObj = {};
+//			for (var index in seriaArray){
+//				param = seriaArray[index];
+//				paramsObj[param["name"]] = param["value"];  
+//			}
+//			return paramsObj;
+//	      }
+//		// test
+//		var obj = getObjectWithFormIdOrClass('#person_info');
+//		console.log(obj);
+	});
+	
+	
+</script>
