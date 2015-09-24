@@ -10,29 +10,23 @@
 		<form action="#" id="person_info" method="get">
 			<input type="text" name="name" id="name" value="张三" />
 			<input type="number" name="age" id="age" value="18" />
+			<input type="checkbox" name="aihao" id="aihao" value="youyong" />
+			<input type="checkbox" name="aihao" id="aihao" value="chifan" />
+			<input type="checkbox" name="aihao" id="aihao" value="sleep" />
+			<input type="checkbox" name="aihao" id="aihao" value="play" />
 			<input type="submit" value="提交"/>
 		</form>
+		
+		<button onclick="ser()"></button>
 	</body>
 </html>
 
 <script type="text/javascript">
 	
-	$(function(){
-		var obj = $('#person_info').i_formDataToObject();
-		console.log(obj);
-//		function getObjectWithFormIdOrClass(idOrClassStr) {
-//			var seriaArray = $(idOrClassStr).serializeArray();
-//			var paramsObj = {};
-//			for (var index in seriaArray){
-//				param = seriaArray[index];
-//				paramsObj[param["name"]] = param["value"];  
-//			}
-//			return paramsObj;
-//	      }
-//		// test
-//		var obj = getObjectWithFormIdOrClass('#person_info');
-//		console.log(obj);
-	});
+		function ser(){
+			var obj = $('form').i_serializeObject();
+			console.log(obj);
+		}
 	
 	
 </script>
