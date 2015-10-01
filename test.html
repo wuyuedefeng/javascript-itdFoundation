@@ -23,8 +23,10 @@
 <script type="text/javascript">
 	
 		function ser(){
-			var obj = $('form').i_serializeObject();
-			console.log(obj);
+//			var obj = $('form').i_serializeObject();
+			var obj = $.i_parseURL('www.baidu.com/page1?name=zhangsan&age=18#hash=search')
+			console.i_log(obj);
+
 		}
 	
 	
