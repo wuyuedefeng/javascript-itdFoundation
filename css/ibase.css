@@ -1,0 +1,52 @@
+/*水平居中begin*/
+.i_center_children_horizontally{
+	text-align: center;
+}
+/*结合给定 固定宽度*/
+.i_center_me_horizontally{
+	margin: 0 auto;
+	display: block;
+}
+/*水平居中end*/
+
+/*垂直居中begin*/
+.i_center_children_vertically{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.i_center_me_vertically{
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*水平垂直居中*/
+.i_center_children_hori_verti{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.i_center_me_hori_verti{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+/*垂直居中end*/
