@@ -1,23 +1,23 @@
 /*水平居中begin*/
-.i_center_children_horizontally{
+.i_center_children_hori{
 	text-align: center;
 }
 /*结合给定 固定宽度*/
-.i_center_me_horizontally{
+.i_center_me_hori{
 	margin: 0 auto;
 	display: block;
 }
 /*水平居中end*/
 
 /*垂直居中begin*/
-.i_center_children_vertically{
+.i_center_children_verti{
   display: flex;
   flex-direction: column;
   justify-content: center;
   /*align-items: center;*/
 }
 
-.i_center_me_vertically{
+.i_center_me_verti{
   position: absolute;
   top: 50%;
   margin: 0;
@@ -29,7 +29,14 @@
 }
 
 /*水平垂直居中*/
-.i_center_children_hori_verti{
+.i_center_children_hori_verti,.i_center_children_hori_verti_multi_hori{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.i_center_children_hori_verti_multi_verti{
   display: flex;
   flex-direction: column;
   justify-content: center;
