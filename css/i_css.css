@@ -36,6 +36,13 @@
   align-items: center;
 }
 
+.i_center_children_verti_multi_hori_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
 .i_center_children_hori_verti_multi_verti{
   display: flex;
   flex-direction: column;
