@@ -12,6 +12,7 @@
 /*垂直居中begin*/
 .i_center_children_verti{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   /*align-items: center;*/
@@ -31,6 +32,7 @@
 /*水平垂直居中*/
 .i_center_children_hori_verti,.i_center_children_hori_verti_multi_hori{
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -38,6 +40,7 @@
 
 .i_center_children_verti_multi_hori_left{
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
@@ -45,6 +48,7 @@
 
 .i_center_children_hori_verti_multi_verti{
   display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
